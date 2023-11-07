@@ -292,7 +292,7 @@ a#next.next.round.active {
 }
 
 /* language  */
-.container-language a{
+.container-language a {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -312,10 +312,12 @@ a#next.next.round.active {
 .language li {
   color: #2e3192;
   border: 1px solid black;
-  padding: 0.25rem 1rem;
   list-style-type: none;
   background-color: white;
   transition: 0.2s;
+}
+.language li a {
+  padding: 0.25rem 1rem;
 }
 .language li:hover {
   cursor: pointer;
@@ -335,12 +337,11 @@ a#next.next.round.active {
   display: block;
 }
 
-@media (max-width: 768px){
-  .container-language a{
-    justify-content:start;
+@media (max-width: 768px) {
+  .container-language a {
+    justify-content: start;
   }
-  .language{
+  .language {
     margin-left: 0px;
-
   }
 }
