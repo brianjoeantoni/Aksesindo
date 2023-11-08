@@ -303,11 +303,17 @@ a#next.next.round.active {
 }
 .dropdown {
   position: relative;
+  cursor: pointer;
 }
 #container-dropdown a {
   border: 1px solid black;
   background-color: white;
   padding: 0.5rem 1rem;
+  transition: 0.2s;
+}
+#container-dropdown a:hover {
+  background-color:#d9d9d9;
+  transition: 0.2s;
 }
 #container-dropdown a:first-child {
   border-bottom: none;
