@@ -38,17 +38,21 @@
             <li class="nav-item"><a class="nav-link link-primary" href="produk.html">Produk</a></li>
             <li class="nav-item"><a class="nav-link link-primary" href="berita.html">Berita &amp; Kegiatan</a></li>
             <li class="nav-item"><a class="nav-link link-primary active" href="hubungi-kami.html">Hubungi Kami</a></li>
-            <li onclick="show()" class="container-language nav-item relative">
-              <a class="nav-link link-primary" href="#">
-                <p>
-                  Bahasa
-                </p>
-                <img src="assets/img/down-arrow.png" alt="">
-              </a>
-              <ul class="language absolute hidden">
-                <li><a href="contact-us.html">English</a></li>
-                <li><a href="#">Indonesia</a></li>
-              </ul>
+            <li class="dropdown nav-item relative">
+              <div
+                onclick="dropLanguage()"
+                class="dropbtn nav-link link-primary"
+              >
+                <p class="dropbtn">Language</p>
+                <img
+                  class="dropbtn language-arrow"
+                  src="assets/img/down-arrow.png"
+                />
+              </div>
+              <div id="container-dropdown" class="dropdown-content">
+                <a href="contact-us.html">English</a>
+                <a href="#">Indonesia</a>
+              </div>
             </li>
           </ul>
         </div>

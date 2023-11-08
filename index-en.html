@@ -63,17 +63,21 @@
                   >Contact Us</a
                 >
               </li>
-              <li onclick="show()" class="container-language nav-item relative">
-                <a class="nav-link link-primary" href="#">
-                  <p>
-                   Language
-                  </p>
-                  <img src="assets/img/down-arrow.png" alt="">
-                </a>
-                <ul class="language absolute hidden">
-                  <li><a href="index-en.html">English</a></li>
-                <li><a href="index.html">Indonesia</a></li>
-                </ul>
+              <li class="dropdown nav-item relative">
+                <div
+                  onclick="dropLanguage()"
+                  class="dropbtn nav-link link-primary"
+                >
+                  <p class="dropbtn">Language</p>
+                  <img
+                    class="dropbtn language-arrow"
+                    src="assets/img/down-arrow.png"
+                  />
+                </div>
+                <div id="container-dropdown" class="dropdown-content">
+                  <a href="#">English</a>
+                  <a href="index.html">Indonesia</a>
+                </div>
               </li>
             </ul>
           </div>

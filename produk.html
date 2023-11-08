@@ -80,17 +80,21 @@
                 >Hubungi Kami</a
               >
             </li>
-            <li onclick="show()" class="container-language nav-item relative">
-              <a class="nav-link link-primary" href="#">
-                <p>
-                  Bahasa
-                </p>
-                <img src="assets/img/down-arrow.png" alt="">
-              </a>
-              <ul class="language absolute hidden">
-                <li><a href="product.html">English</a></li>
-                <li><a href="#">Indonesia</a></li>
-              </ul>
+            <li class="dropdown nav-item relative">
+              <div
+                onclick="dropLanguage()"
+                class="dropbtn nav-link link-primary"
+              >
+                <p class="dropbtn">Language</p>
+                <img
+                  class="dropbtn language-arrow"
+                  src="assets/img/down-arrow.png"
+                />
+              </div>
+              <div id="container-dropdown" class="dropdown-content">
+                <a href="product.html">English</a>
+                <a href="#">Indonesia</a>
+              </div>
             </li>
           </ul>
         </div>
@@ -514,6 +518,5 @@
 
     <script async src="assets/js/bootstrap.min.js"></script>
     <script async src="assets/js/script.js"></script>
-
   </body>
 </html>

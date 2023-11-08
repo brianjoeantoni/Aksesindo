@@ -292,49 +292,40 @@ a#next.next.round.active {
 }
 
 /* language  */
-.container-language a {
+.dropbtn {
   display: flex;
+  gap: 1rem;
   justify-content: space-between;
   align-items: center;
 }
-.container-language a p {
+.dropbtn p {
   margin: 0;
 }
-.container-language a img {
-  width: 16px;
-  height: 16px;
-  margin-left: 1rem;
-}
-.language {
-  padding: 0px 0px 8px 0px;
-  margin-left: 16px;
-}
-.language li {
-  color: #2e3192;
-  border: 1px solid black;
-  list-style-type: none;
-  background-color: white;
-  transition: 0.2s;
-}
-.language li a {
-  padding: 0.25rem 1rem;
-}
-.language li:hover {
-  cursor: pointer;
-  background-color: #d9d9d9;
-  transition: 0.2s;
-}
-.relative {
+.dropdown {
   position: relative;
 }
-.absolute {
+#container-dropdown a {
+  border: 1px solid black;
+  background-color: white;
+  padding: 0.5rem 1rem;
+}
+#container-dropdown a:first-child {
+  border-bottom: none;
+}
+.dropdown-content {
+  display: none;
   position: absolute;
 }
-.hidden {
-  display: none;
+.dropdown-content a {
+  display: block;
 }
 .block {
   display: block;
+}
+
+.language-arrow {
+  width: 14px;
+  height: 14px;
 }
 
 @media (max-width: 768px) {
