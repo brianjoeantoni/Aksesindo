@@ -335,10 +335,10 @@ a#next.next.round.active {
 }
 
 @media (max-width: 768px) {
-  .container-language a {
+  .dropbtn {
     justify-content: start;
   }
-  .language {
-    margin-left: 0px;
+  .dropdown-content{
+    width: 100%;
   }
 }
